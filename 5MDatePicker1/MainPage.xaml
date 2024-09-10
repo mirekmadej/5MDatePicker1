@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_5MDatePicker1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <DatePicker
+                MinimumDate="09/09/2024"
+                MaximumDate="09/20/2024"
+                DateSelected="onDatePicker1Selected"
+                x:Name="dpDatePicker1"
+                />
+            <Label
+                Text="data: "
+                x:Name="lblData"
+                />
+            <Rectangle
+                BackgroundColor="Black"
+                HeightRequest="20"
+                />
+            <DatePicker
+                x:Name="dpDatePicker2"
+                />
+            <Button
+                Text="ustaw datę"
+                Clicked="btnUstawClicked"
+                />
+            <Rectangle
+                BackgroundColor="Black"
+                HeightRequest="20"
+                />
+            <Label
+                Text="data od:"
+                />
+            <DatePicker
+                x:Name="dpDatePickerRez1"
+                MaximumDate="10/31/2024"
+                DateSelected="dpRezerwackaSelected"
+                />
+            <Label
+                Text="data do:"
+                />
+            <DatePicker
+                x:Name="dpDatePickerRez2"
+                MaximumDate="10/31/2024"
+                DateSelected="dpRezerwackaSelected"
+                />
+
+            <Label
+                Text="dni: "
+                x:Name ="lblDni"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
