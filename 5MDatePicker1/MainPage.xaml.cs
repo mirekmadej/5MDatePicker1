@@ -26,7 +26,10 @@
             if (dpDatePickerRez1.Date > dpDatePickerRez2.Date)
                 lblDni.Text = "zły wybór";
             else
-                lblDni.Text = "dobry wybór";
+            {
+                //lblDni.Text = "dobry wybór";
+                lblDni.Text = (dpDatePickerRez2.Date - dpDatePickerRez1.Date).Days.ToString();
+            }
         }
 
     }
